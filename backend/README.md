@@ -44,8 +44,9 @@ The application will run on `http://127.0.0.1:5000`.
 
 Verifying application 
 
-To check if the application is running or not, open a command window and type the following command 
+To check if the application is running or not, open a command window and type the following command:
 
+`curl http://localhost:5000/api/users`
 
 
 Project structure
