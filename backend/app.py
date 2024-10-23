@@ -11,7 +11,7 @@ def create_app():
     app = Flask(__name__)
     app.url_map.strict_slashes = False
     CORS(app, resources={r"/api/*": {"origins": "http://localhost:5173"}})
-    #CORS(app, resources={r"/api/": {"origins": ""}})
+    #CORS(app, resources={r"/api/*": {"origins": "*"}})
     #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'  # Update your DB URI as needed
     #app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config.from_object(Config)
