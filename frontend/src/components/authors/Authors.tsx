@@ -1,16 +1,11 @@
 import React from 'react';
-import AuthorList from './ListAuthors';
-import CreateAuthor from './CreateAuthor';
+import { Outlet } from 'react-router-dom';
 
-interface Props {
-  action: string;
-}
-
-const Authors: React.FC<Props> = ({ action }) => {
+const Authors: React.FC = () => {
   return (
     <div>
-      <h2>{action === 'create' ? <CreateAuthor/>  : <AuthorList/> }</h2>
-      {/* Add your form or list components here */}
+      <h2>Authors</h2>
+      <Outlet />
     </div>
   );
 };

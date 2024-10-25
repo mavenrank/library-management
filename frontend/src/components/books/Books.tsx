@@ -1,16 +1,11 @@
 import React from 'react';
-import BookList from './ListBooks';
-import CreateBook from './CreateBook';
+import { Outlet } from 'react-router-dom';
 
-interface Props {
-  action: string;
-}
-
-const Books: React.FC<Props> = ({ action }) => {
+const Books: React.FC = () => {
   return (
     <div>
-      <h2>{action === 'create' ? <CreateBook/>  : <BookList/> }</h2>
-      {/* Add your form or list components here */}
+      <h2>Books</h2>
+      <Outlet />
     </div>
   );
 };

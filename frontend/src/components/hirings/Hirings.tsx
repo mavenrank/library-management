@@ -1,18 +1,13 @@
 import React from 'react';
-import HiringList from './HiringList';
-import CreateHiring from './CreateHiring';
+import { Outlet } from 'react-router-dom';
 
-interface Props {
-  action: string;
-}
-
-const Hirings: React.FC<Props> = ({ action }) => {
+const Hiring: React.FC = () => {
   return (
     <div>
-      <h2>{action === 'create' ? <CreateHiring/>  : <HiringList/> }</h2>
-      {/* Add your form or list components here */}
+      <h2>Hiring</h2>
+      <Outlet />
     </div>
   );
 };
 
-export default Hirings;
+export default Hiring;

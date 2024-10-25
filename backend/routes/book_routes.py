@@ -8,12 +8,14 @@ books_schema = BookSchema(many=True)
 
 @book_routes.route('/', methods=['POST'])
 def add_book():
-    title = request.json['Title']
-    isbn = request.json['ISBN']
-    pub_year = request.json['PublicationYear']
-    genre = request.json['Genre']
-    author_id = request.json['AuthorID']
-    new_book = Book(Title=title, ISBN=isbn, PublicationYear=pub_year, Genre=genre, AuthorID=author_id)
+    print(request)
+    title = request.json['title']
+    isbn = request.json['isbn']
+    pub_year = request.json['publication_year']
+    genre = request.json['genre']
+    author_id = request.json['author_id']
+    print(author_id)
+    new_book = Book(title=title, isbn=isbn, publication_year=pub_year, genre=genre, author_id=author_id)
     db.session.add(new_book)
     db.session.commit()
     return book_schema.jsonify(new_book)
@@ -31,16 +33,16 @@ def get_book(id):
 @book_routes.route('/<id>', methods=['PUT'])
 def update_book(id):
     book = Book.query.get(id)
-    title = request.json['Title']
-    isbn = request.json['ISBN']
-    pub_year = request.json['PublicationYear']
-    genre = request.json['Genre']
-    author_id = request.json['AuthorID']
-    book.Title = title
-    book.ISBN = isbn
-    book.PublicationYear = pub_year
-    book.Genre = genre
-    book.AuthorID = author_id
+    title = request.json['title']
+    isbn = request.json['isbn']
+    pub_year = request.json['publication_yar']
+    genre = request.json['genre']
+    author_id = request.json['author_id']
+    book.title = title
+    book.isbn = isbn
+    book.publication_yar = pub_year
+    book.genre = genre
+    book.author_id = author_id
     db.session.commit()
     return book_schema.jsonify(book)
 

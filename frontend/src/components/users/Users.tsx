@@ -1,16 +1,11 @@
 import React from 'react';
-import UserList from './ListUsers';
-import CreateUser from './CreateUser';
+import { Outlet } from 'react-router-dom';
 
-interface Props {
-  action: string;
-}
-
-const Users: React.FC<Props> = ({ action }) => {
+const Users: React.FC = () => {
   return (
     <div>
-      <h2>{action === 'create' ? <CreateUser/>  : <UserList/> }</h2>
-      {/* Add your form or list components here */}
+      <h2>Users</h2>
+      <Outlet />
     </div>
   );
 };
