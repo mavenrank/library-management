@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #222; /* Darker navbar */
     padding: 10px;
 }
 
@@ -21,14 +21,14 @@
 
 .navbar a {
     display: block;
-    color: white;
+    color: #ddd; /* Light text color */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .navbar a:hover {
-    background-color: #575757;
+    background-color: #444; /* Hover color */
 }
 
 .navbar ul ul {
@@ -44,7 +44,7 @@
     width: 200px;
 }
 
-.navbar li:hover>ul {
+.navbar li:hover > ul {
     display: flex;
 }
 
@@ -54,18 +54,21 @@
     margin-top: 20px;
 }
 
+/* Table Container */
 .table-container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #444;
     border-radius: 5px;
-    background-color: burlywood;
+    background-color: #2b2b2b; /* Darker background */
+    color: #f1f1f1; /* Light text color */
 }
 
 .table-container h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #f1f1f1;
 }
 
 .table-container table {
@@ -75,27 +78,28 @@
 
 .table-container th,
 .table-container td {
-    border: 1px solid #ddd;
+    border: 1px solid #555; /* Darker border color */
     padding: 8px;
     text-align: left;
+    color: #f1f1f1; /* Light text color */
 }
 
 .table-container th {
-    background-color: #f2f2f2;
+    background-color: #444; /* Lighter dark for headers */
     font-weight: bold;
 }
 
 .table-container tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #3b3b3b; /* Alternate row color */
 }
 
 .table-container tr:hover {
-    background-color: #ddd;
+    background-color: #555; /* Hover row color */
 }
 
 .table-container button {
     padding: 5px 10px;
-    background-color: #4caf50;
+    background-color: #1abc9c; /* Accent color */
     color: white;
     border: none;
     border-radius: 4px;
@@ -104,28 +108,30 @@
 }
 
 .table-container button:hover {
-    background-color: #45a049;
+    background-color: #16a085; /* Darker hover color */
 }
 
-/* Form styles */
+/* Form Container */
 .form-container {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #444;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #2b2b2b; /* Darker background */
+    color: #f1f1f1;
 }
 
 .form-container h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #f1f1f1;
 }
 
 .form-container label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: #ddd; /* Lighter label color */
 }
 
 .form-container input[type="text"],
@@ -134,12 +140,14 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #555;
     border-radius: 5px;
+    background-color: #444; /* Input background color */
+    color: #f1f1f1; /* Light input text color */
 }
 
 .form-container button {
-    background-color: #4caf50;
+    background-color: #1abc9c; /* Accent button color */
     color: white;
     border: none;
     cursor: pointer;
@@ -147,5 +155,5 @@
 }
 
 .form-container button:hover {
-    background-color: #45a049;
+    background-color: #16a085; /* Darker hover color */
 }

@@ -1,23 +1,22 @@
 .form-container {
-  
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #444;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: #2b2b2b; /* Darker background */
 }
 
 .form-container h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #333;
+  color: #e0e0e0; /* Light text color */
 }
 
 .form-container label {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
-  color: #333;
+  color: #ddd; /* Lighter gray for labels */
 }
 
 .form-container input[type="text"],
@@ -25,14 +24,16 @@
   width: 100%;
   padding: 8px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #555;
   border-radius: 4px;
+  background-color: #444; /* Input background color */
+  color: #eee; /* Light input text color */
 }
 
 .form-container button {
   width: 100%;
   padding: 10px;
-  background-color: #4caf50;
+  background-color: #1abc9c; /* Accent color */
   color: white;
   border: none;
   border-radius: 4px;
@@ -41,23 +42,23 @@
 }
 
 .form-container button:hover {
-  background-color: #45a049;
+  background-color: #16a085; /* Darker hover color */
 }
 
 .table-container {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  border: 1px solid #333;
+  border: 1px solid #444;
   border-radius: 5px;
   background-color: #333; /* Dark background color */
-  color: #fff; /* Light text color */
+  color: #f1f1f1; /* Light text color */
 }
 
 .table-container h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #fff; /* Light text color */
+  color: #f1f1f1; /* Light text color */
 }
 
 .table-container table {
@@ -67,14 +68,14 @@
 
 .table-container th,
 .table-container td {
-  border: 1px solid #555; /* Darker border color */
+  border: 1px solid #666; /* Slightly lighter border */
   padding: 8px;
   text-align: left;
-  color: #fff; /* Light text color */
+  color: #f1f1f1; /* Light text color */
 }
 
 .table-container th {
-  background-color: #444; /* Slightly lighter dark background */
+  background-color: #444; /* Lighter dark background */
   font-weight: bold;
 }
 
@@ -88,7 +89,7 @@
 
 .table-container button {
   padding: 5px 10px;
-  background-color: #4caf50; /* Button background color */
+  background-color: #1abc9c; /* Accent color for buttons */
   color: white;
   border: none;
   border-radius: 4px;
@@ -97,5 +98,5 @@
 }
 
 .table-container button:hover {
-  background-color: #45a049; /* Button hover color */
+  background-color: #16a085; /* Darker hover color */
 }

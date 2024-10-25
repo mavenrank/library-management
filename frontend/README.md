@@ -1,5 +1,8 @@
 # library-management - frontend
 
+prerequisite - npm 
+
+Switch to the directory using `cd frontend`
 Create a Vite application using the following commands:
 
 This will create the vite dependencies in the same folder and no new folder is created. This is a one time set up and not required when the source is set up off github.
